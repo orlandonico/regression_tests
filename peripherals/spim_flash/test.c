@@ -1,3 +1,4 @@
+//TEST
 /*
  * Copyright (C) 2018 ETH Zurich and University of Bologna
  *
