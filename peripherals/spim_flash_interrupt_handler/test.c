@@ -1,48 +1,30 @@
 /*
-
  * Copyright (C) 2018 ETH Zurich and University of Bologna
-
  *
-
  * Licensed under the Apache License, Version 2.0 (the "License");
-
  * you may not use this file except in compliance with the License.
-
  * You may obtain a copy of the License at
-
  *
-
  *     http://www.apache.org/licenses/LICENSE-2.0
-
  *
-
  * Unless required by applicable law or agreed to in writing, software
-
  * distributed under the License is distributed on an "AS IS" BASIS,
-
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
  * See the License for the specific language governing permissions and
-
  * limitations under the License.
-
  */
 
 /**=======================================================================================================================
-
  **                                                test_spim_flash_interrupt_handler
-
  *=======================================================================================================================**/
 
 /**=======================================================================================================================
-
  * ?                                             INFORMATION
  * @author         :  Bonfanti Corrado, Orlando Nico
  * @email          :  corrado.bonfanti@unibo.it, nico.orlando@studio.unibo.it, mrorlandonico@gmail.com
- * @repo           :  regression_test/peripheral/spim_flash_interrupt
+ * @repo           :  regression_test/peripheral/spim_flash_interrupt_handler
  * @createdOn      :  20/09/2021
  * @description    :  Interrupt Handler Work
-
  *=======================================================================================================================**/
 
 /*=========================================== Include ===========================================*/
@@ -140,7 +122,7 @@ int main()
                                              SPI_CMD_SEND_CMD(0x05, 8, 0),
                                              SPI_CMD_RX_DATA(1, TEST_PAGE_SIZE, 8, 0, 0),
                                              SPI_CMD_EOT(0, 0)};
-                                             
+
   printf("\n...test_spim_flash_interrupt_handler...\n");
   printf("[%d, %d] Start test flash page programming over qspi %d\n", get_cluster_id(), get_core_id(), u);
 
